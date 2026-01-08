@@ -1,10 +1,11 @@
-# FastAPI Take-Home Assessment Studio
+# FastAPI Take-Home Assessment 
 
 A professional workbench and documentation suite for the **AI-Powered Task Summarizer** backend assessment. This project demonstrates a production-ready approach to building a FastAPI service with PostgreSQL persistence and external AI integrations.
 
 ## 🚀 Project Overview
 
-The core objective of this service is to provide users with an intelligent task management system. Unlike traditional CRUD applications, this service leverages the **Gemini API** to automatically generate summaries and categories for every task created, ensuring data is enriched before persistence.
+Your task is to build a robust REST API service using FastAPI and PostgreSQL. The serviceshould act as a bridge between a local database and an external API (such as an LLM provider,GitHub, or a public data
+service), demonstrating your ability to handle complex data flows, strict validation, and testing.
 
 ## 🛠 Tech Stack
 
@@ -12,7 +13,6 @@ The core objective of this service is to provide users with an intelligent task 
 - **Validation**: Pydantic v2
 - **ORM**: SQLAlchemy / SQLModel
 - **Database**: PostgreSQL
-- **AI Integration**: Google Gemini API (via `httpx`)
 - **Testing**: Pytest & HTTPX (Async tests)
 - **Deployment**: Docker & Docker Compose
 
@@ -29,8 +29,6 @@ The project is organized into distinct layers to promote maintainability and tes
 ### 2. Dependency Injection
 We utilize FastAPI's dependency injection system for database sessions and configuration management, allowing for easy mocking during unit testing.
 
-### 3. Asynchronous I/O
-All external network calls (Gemini API) and database operations (where supported) are performed asynchronously to prevent blocking the event loop, maximizing throughput.
 
 ## 📡 API Endpoints
 
